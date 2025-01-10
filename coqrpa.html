@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código QR para mi página web</title>
+</head>
+<body>
+    <h1>Visita mi página web</h1>
+    <p>Escanea este código QR para acceder:</p>
+    <div id="qrcode"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        const url = "file:///C:/Users/Lenovo/Documents/paginanueva/index.html"; // Reemplaza con el enlace de tu página web
+        new QRCode(document.getElementById("qrcode"), url);
+    </script>
+</body>
+</html>

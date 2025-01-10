@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos</title>
+    <style>
+        body {
+            background-image: url('imagenes/fondhuertas.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: black;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: black;
+            text-shadow: 2px 2px 4px limegreen;
+        }
+        p, h2 {
+            color: black;
+            text-shadow: 1px 1px 3px limegreen;
+        }
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .gallery-item {
+            border: 2px solid #000;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galería de Fotos</h1>
+    <p>Encuentra imágenes de nuestro huerto en crecimiento y de los productos que se han cosechado. ¡Encuentra la inspiracion que necesitas para crear tu huerto!</p>
+    
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="imagenes/huertareal.jpg" alt="Primera huerta creada">
+            <p>Primera huerta creada</p>
+        </div>
+        <!-- Se pueden añadir más bloques 'gallery-item' cuando los visitantes suban sus imágenes -->
+    </div>
+</body>
+</html>
